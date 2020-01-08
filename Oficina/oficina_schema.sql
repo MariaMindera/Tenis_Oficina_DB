@@ -52,9 +52,9 @@ CREATE TABLE carros(
 );
 
 CREATE TABLE proprietarios(
-  carro_id INTEGER UNSIGNED,
+  carro_id INTEGER,
   cliente_id INTEGER UNSIGNED,
-  proprietario INTEGER UNSIGNED
+  proprietario INTEGER
 );
 ALTER TABLE proprietarios ADD CONSTRAINT PK_proprietario PRIMARY KEY (carro_id, cliente_id);
 
